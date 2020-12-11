@@ -63,49 +63,40 @@ nav > a {
   color: #fff;
 }
 
-table.tabl {
-  margin: 5% 0 10% 10%;
-	color: rgb(93 90 90);
-	-webkit-border-radius: 25px 25px 0 0;
-	border-radius: 10px;
+/************ STYLING THE TABLE STARTS BELOW ************/
+table{
+	font:italic 16px/180% Arial, Helvetica, sans-serif;
+	width:80%;
+	margin: 5% 0 5% 15%;
+}
+tr th{
+  background-image: linear-gradient(to bottom, #4ca1af, #c4e0e5);
+	border:solid 1px;
+	border-bottom: solid 3px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	padding:4px;
+	background-repeat: no-repeat;
+  font-size: 1.5em;
+}
+tr{
+	opacity: 0.7;
 }
 
-table tr td {
-  padding: 2%;
-  border-spacing: 10px;
-  background: rgb(206 202 202);
-  -webkit-border-radius: 25px 25px 0 0;
-  border-radius: 5px;
-  opacity: 0.7;
-  border-collapse: collapse;
+tr:hover{
+	opacity: 1.0;
 }
 
-th {
-  background: rgb(73 249 143);
-  width: 10%;
-  padding: 2%;
-  margin: 0;
-  border: 2px solid #cc852c;
-  -webkit-border-radius: 25px 25px 0 0;
-  border-radius: 10px 10px 0px 0px;
+tr td{
+	background-color: #a1a1a1;
+	padding:4px;
+	color: #000;
+  font-weight: bolder;
+	text-align: center;
+	border:solid 1px;
+	border-radius: 4px;
 }
 
-tr:first-child>th {
-  text-align: left;
+tr th:first-child, tr td:first-child{
+	text-align: left;
 }
-
-tr:last-child>td{
-  -webkit-border-radius: 25px 25px 0 0;
-  border-radius: 10px 10px 0px 0px;
-}
-
-tr:nth-child(2)>td{
-  -webkit-border-radius: 25px 25px 0 0;
-  border-radius: 0px 0px 10px 10px;
-}
-
-tr > td:first-child {
-  width: 40%
-}
-
-tr:hover {background-color: #000;}
